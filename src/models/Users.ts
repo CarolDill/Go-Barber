@@ -1,4 +1,11 @@
-import { Entity, Column, PrimaryGeneratedColumn, CreateDateColumn, UpdateDateColumn } from 'typeorm';
+/* eslint-disable camelcase */
+import {
+  Entity,
+  Column,
+  PrimaryGeneratedColumn,
+  CreateDateColumn,
+  UpdateDateColumn,
+} from 'typeorm';
 
 @Entity('users')
 class User {
@@ -10,6 +17,9 @@ class User {
 
   @Column()
   email: string;
+
+  @Column()
+  avatar: string;
 
   @Column()
   password: string;
